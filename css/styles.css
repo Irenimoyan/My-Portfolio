@@ -520,10 +520,11 @@ input[type='checkbox'] {
 /*     Header     */
 /******************/
 .header {
-	padding-top: 7rem;
-	padding-bottom: 5.5rem;
+	padding-top: 5rem;
+	padding-bottom: 4rem;
 	background: linear-gradient(to bottom right, rgba(19, 19, 20, 0.5), rgba(19, 19, 20, 0.5)), url('../images/IMG-20230131-WA0225\ -\ Copy.jpg') center center no-repeat;
 	background-size: cover;
+	background-position: center;
 	text-align: center;
 }
 
