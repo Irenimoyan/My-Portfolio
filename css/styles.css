@@ -373,8 +373,8 @@ input[type='checkbox'] {
 /**********************/
 .navbar {
 	background-color: #24262a;
-	font-weight: 600;
-	font-size: 0.875rem;
+	font-weight: 800;
+	font-size: 0.750rem;
 	line-height: 0.875rem;
 	box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.025);
 }
@@ -385,8 +385,9 @@ input[type='checkbox'] {
 }
 
 .navbar .logo-image img {
-    width: 118px;
-	height: 36px;
+    width: 100px;
+	height: 50px;
+	
 }
 
 .navbar .logo-text {
@@ -399,7 +400,7 @@ input[type='checkbox'] {
 
 .offcanvas-collapse {
 	position: fixed;
-	top: 3.25rem; /* adjusts the height between the top of the page and the offcanvas menu */
+	top: 2rem; /* adjusts the height between the top of the page and the offcanvas menu */
 	bottom: 0;
 	left: 100%;
 	width: 100%;
@@ -521,7 +522,7 @@ input[type='checkbox'] {
 .header {
 	padding-top: 7rem;
 	padding-bottom: 5.5rem;
-	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../images/header-background.jpg') center center no-repeat;
+	background: linear-gradient(to bottom right, rgba(19, 19, 20, 0.5), rgba(19, 19, 20, 0.5)), url('../images/IMG-20230131-WA0225\ -\ Copy.jpg') center center no-repeat;
 	background-size: cover;
 	text-align: center;
 }
@@ -854,9 +855,9 @@ input[type='checkbox'] {
 /*     Footer     */
 /******************/
 .footer {
-	padding-top: 6.25rem;
+	padding-top: 3rem;
 	padding-bottom: 2rem;
-	background-color: #24262a;
+	background-color: transparent;
 	text-align: center;
 }
 
@@ -896,12 +897,12 @@ input[type='checkbox'] {
 .copyright {
 	padding-top: 1rem;
 	padding-bottom: 1rem;
-	background-color: #24262a;
+	background-color: transparent;
 	text-align: center;
 }
 
 .copyright .p-small {
-	color: #9da6ac;
+	color: blueviolet;
 	text-align: center;
 }
 
