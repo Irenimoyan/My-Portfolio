@@ -22,10 +22,14 @@
     <title>Irenimoyan</title>
     
     <!-- Styles -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Outfit:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
 	
 	<!-- Favicon  -->
@@ -99,13 +103,25 @@
     <!-- Header -->
     <header id="header" class="header">
         <div class="container">
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <div class="text-container">
-                        <h1 class="h1-large">I love to create beautiful and efficient websites</h1>
-                        <a class="btn-solid-lg page-scroll" href="#about">Discover</a>
-                        <a class="btn-outline-lg page-scroll" href="#contact"><i class="fas fa-user"></i>Contact Me</a>
+                    <div class="text-container" data-aos="fade-right">
+                        <h1 class="h1-large">I love to create <span id="typing-text"></span></h1>
+                        <p class="p-large mb-5">I'm a passionate developer focused on building high-performance, beautiful websites that
+                            deliver exceptional user experiences.</p>
+                        <div class="button-container">
+                            <a class="btn-solid-lg page-scroll" href="#about">Discover My Work</a>
+                            <a class="btn-outline-lg page-scroll" href="#contact"><i class="fas fa-user"></i> Let's Talk</a>
+                        </div>
                     </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="image-container" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="hero-image-wrapper">
+                            <img class="img-fluid hero-img" src="images/IMG-20230131-WA0225.jpg" alt="Tom-Alli Sheu">
+                            <div class="blob-overlay"></div>
+                        </div>
+                    </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -117,32 +133,26 @@
     <div id="about" class="basic-1 bg-gray">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4" data-aos="fade-up">
                     <div class="text-container first">
-                        <h2>Hi there I'm Irenimoyan</h2>
-                        <p>And I love to create beautiful and efficient websites. I love going through the entire process from concept, to
-                            design and then development and launch</p>
+                        <h2>Hi there, I'm Irenimoyan</h2>
+                        <p>I am a passionate web developer dedicated to crafting beautiful, high-performance websites. I thrive on the
+                            end-to-end journey of transforming a concept into a polished, production-ready digital experience.</p>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
-                <div class="col-lg-4">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="text-container second">
-                        <div class="time">2012 - PRESENT</div>
-                        <h6>intern/junior Web Developer</h6>
-                        <p>I'm in search of any role as an intern or junior fronted Developer</p>
-                        <div class="time">Jan 2022 - Jun 2022</div>
-                        <h6>Trainee/Entry level Developer </h6>
-                        <p>Started my journey as a Software Engineer</p>
+                        <div class="time">2024 - PRESENT</div>
+                        <h6>Junior Frontend Developer / Intern</h6>
+                        <p>Currently pursuing opportunities to contribute to dynamic engineering teams, with a focus on building responsive and
+                            high-performance web applications.</p>
+                        <div class="time">Jan 2024 - Aug 2024</div>
+                        <h6>Software Development Trainee</h6>
+                        <p>Completed intensive technical training, mastering modern frontend technologies and core software architecture
+                            principles.</p>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
-                <div class="col-lg-4">
-                    <!-- <div class="text-container third"> -->
-                    <!-- <div class="time">2017 - 2018</div>
-                        <h6>Senior Web Designer</h6>
-                        <p>Inhouse web designer for ecommerce firm</p>
-                        <div class="time">2016 - 2017</div>
-                        <h6>Junior Web Designer</h6>
-                        <p>Junior web designer for small web agency</p> -->
-                        <!-- </div> end of text-container -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -154,27 +164,28 @@
     <div id="services" class="basic-2">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="h2-heading">Offered services</h2>
-                    <p class="p-heading">Web design and development have been my bread and butter for more than 5 years. During that time I've discovered that I can help startups and companies with the following services</p>
+                <div class="col-lg-12" data-aos="fade-up">
+                    <h2 class="h2-heading">Expertise & Services</h2>
+                    <p class="p-heading">I specialize in building modern, scalable, and user-centric digital solutions. My goal is to
+                        help startups and businesses achieve their objectives through clean code and impactful design.</p>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="0">
                     <div class="text-box">
                         <i class="far fa-gem"></i>
                         <h4>DESIGN</h4>
                         <p>Successful online projects start with good design. It establishes a solid foundation for future development and allows for long term growth</p>
                     </div> <!-- end of text-box -->
                 </div> <!-- end of col -->
-                <div class="col-lg-4">
+                <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
                     <div class="text-box">
                         <i class="fas fa-code"></i>
                         <h4>DEVELOPMENT</h4>
                         <p>I can code my own designs or even use the customer's design as base. My focus is to generate clean code that's well structured for reliability</p>
                     </div> <!-- end of text-box -->
                 </div> <!-- end of col -->
-                <div class="col-lg-4">
+                <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
                     <div class="text-box">
                         <i class="fas fa-tv"></i>
                         <h4>BASIC SEO</h4>
@@ -202,7 +213,8 @@
                             <p>My favorite design tools are Photoshop and Illustrator but I can create designs in Figma, Sketch and Adobe XD too</p>
                             -->
                             <h5>DEVELOPMENT SKILLS</h5>
-                            <p>I am familiar and work on a daily basis with HTML, CSS, JavaScript, Bootstrap and other modern frameworks</p>
+                            <p>I am familiar and work on a daily basis with HTML, CSS, JavaScript,React,Git, Bootstrap, Tailwind and other modern
+                                frameworks</p>
                             
                             <div class="icons-container">
                                 <!-- <img src="images/details-icon-photoshop.png" alt="alternative"> -->
@@ -210,6 +222,7 @@
                                 <img src="images/details-icon-html.png" alt="alternative">
                                 <img src="images/details-icon-css.png" alt="alternative">
                                 <img src="images/details-icon-bootstrap.png" alt="alternative">
+                                <!-- <img src="images/details-icon-React.png" alt="alternative"> -->
                                 <img src="images/details-icon-javascript.png" alt="alternative">
                             </div> <!-- end of icons-container -->
                         </div> <!-- end of text-container -->
@@ -227,54 +240,81 @@
     <div id="projects" class="basic-3">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="h2-heading">My projects</h2>
-                    <p class="p-heading">Listed below are some of the personal projects I've worked on.</p>
+                <div class="col-lg-12" data-aos="fade-up">
+                    <h2 class="h2-heading">Featured Projects</h2>
+                    <p class="p-heading">A collection of personal projects showcasing my skills in web design and development.</p>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="text-container">
+                <!-- Project Card -->
+                <div class="col-lg-6 col-md-6" data-aos="fade-up">
+                    <div class="project-card">
                         <div class="image-container">
                             <a href="https://irenimoyan.github.io/Student-form/">
-                                <img class="img-fluid" src="images/school portal.png" alt="alternative">
+                                <img class="img-fluid" src="images/school-portal.png" alt="School Portal">
                             </a>
-                        </div> <!-- end of image-container -->
-                        <p><strong>For:</strong> NJL, <strong>Project:</strong>This is a school form static website <a class="blue"
-                                href="https://irenimoyan.github.io/Student-form/">Check project</a></p>
-                    </div> <!-- end of text-container -->
+                        </div>
+                        <div class="project-details">
+                            <h5>School Portal Form</h5>
+                            <p><strong>For:</strong> NJL</p>
+                            <p>A comprehensive, static school registration form designed with focus on clean UI and efficient data collection
+                                fields.</p>
+                            <a class="btn-solid-lg" href="https://irenimoyan.github.io/Student-form/">View Project</a>
+                        </div>
+                        </div>
+                        </div>
 
-                    <div class="text-container">
+                <!-- Project Card -->
+                <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card">
                         <div class="image-container">
                             <a href="https://irenimoyan.github.io/petit/">
-                                <img class="img-fluid" src="images/pet it.png" alt="alternative">
+                                <img class="img-fluid" src="images/pet-it.png" alt="Pet It">
                             </a>
-                        </div> <!-- end of image-container -->
-                        <p><strong>For:</strong> Pet It, <strong>Project:</strong> A static website, designed and developed for purchasing Pets
-                            online <a class="blue" href="https://irenimoyan.github.io/petit/">Check Project</a></p>
-                    </div> <!-- end of text-container -->
+                        </div>
+                        <div class="project-details">
+                            <h5>Pet It - E-commerce</h5>
+                            <p><strong>For:</strong> Pet It</p>
+                            <p>An intuitive pet store landing page featuring a modern design, optimized for purchasing and browsing pets online.
+                            </p>
+                            <a class="btn-solid-lg" href="https://irenimoyan.github.io/petit/">View Project</a>
+                        </div>
+                        </div>
+                        </div>
 
-                    <div class="text-container">
+                <!-- Project Card -->
+                <div class="col-lg-6 col-md-6" data-aos="fade-up">
+                    <div class="project-card">
                         <div class="image-container">
                             <a href="https://irenimoyan.github.io/FOOD/">
-                                <img class="img-fluid" src="images/Food.png" alt="alternative">
+                                <img class="img-fluid" src="images/Food.png" alt="Food Ordering">
                             </a>
-                        </div> <!-- end of image-container -->
-                        <p><strong>For:</strong> Food, <strong>Project:</strong> created a Static webite for ordering local and continental
-                            dishes <a class="blue" href="https://irenimoyan.github.io/FOOD/">Check Project</a></p>
-                    </div> <!-- end of text-container -->
-                    <div class="text-container">
+                        </div>
+                        <div class="project-details">
+                            <h5>Local & Continental Food</h5>
+                            <p><strong>For:</strong> Food Haven</p>
+                            <p>A vibrant restaurant website designed for ordering local and continental dishes with a seamless user journey.</p>
+                            <a class="btn-solid-lg" href="https://irenimoyan.github.io/FOOD/">View Project</a>
+                        </div>
+                        </div>
+                        </div>
+                        
+                        <!-- Project Card -->
+                        <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                            <div class="project-card">
                         <div class="image-container">
                             <a href="https://irenimoyan.github.io/RideForRent/">
-                                <img class="img-fluid" src="images/Rideforrent.png" alt="alternative">
+                                <img class="img-fluid" src="images/Rideforrent.png" alt="Ride for Rent">
                             </a>
                         </div>
-                        <p><strong>For:</strong> RideForRent, <strong>Project:</strong>Its a piece of project whereby you rent a ride of your
-                            choice and add an appointed date you'll
-                            be using it then you order (PS: Driver is Optional)<a class="blue"
-                                href="https://irenimoyan.github.io/RideForRent/">Check Project</a></p>
+                        <div class="project-details">
+                            <h5>RideForRent</h5>
+                            <p><strong>For:</strong> RideForRent</p>
+                            <p>A car rental platform allowing users to book vehicles for specific dates with optional driver services.</p>
+                            <a class="btn-solid-lg" href="https://irenimoyan.github.io/RideForRent/">View Project</a>
                         </div>
-                </div> <!-- end of col -->
+                    </div>
+                    </div>
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of basic-3 -->
@@ -285,78 +325,50 @@
     <div class="basic-4">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4">
-                    <div class="text-container">
+                <div class="col-lg-12" data-aos="fade-up">
+                    <h2 class="h2-heading">Other Works</h2>
+                    <p class="p-heading mb-5 text-center">Experimental projects and technical challenges I've completed during my
+                        learning journey.</p>
+                </div>
+                </div>
+                <div class="row">
+                    <!-- Project Card -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                        <div class="project-card">
                         <div class="image-container">
                             <a href="project.html">
-                                <img class="img-fluid" src="images/countam.png" alt="alternative">
-                            </a>
-                        </div> <!-- end of image-container -->
-                        <p><strong>For:</strong> CountAm, <strong>Project:</strong> Its a piece of class practise that was put into action <a
-                                class="blue" href="project.html">Check Project</a></p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-4">
-                    <div class="text-container">
-                        <div class="image-container">
-                            <a href="https://irenimoyan.github.io/Calculator/">
-                                <img class="img-fluid" src="images/calculator.png" alt="alternative">
-                            </a>
-                        </div> <!-- end of image-container -->
-                        <p><strong>For:</strong> Calculator, <strong>Project:</strong> developed through a social media Challenge<a class="blue"
-                                href="https://irenimoyan.github.io/Calculator/">Check Project</a></p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <!-- <div class="col-lg-4">
-                    <div class="text-container">
-                        <div class="image-container">
-                            <a href="project.html">
-                                <img class="img-fluid" src="images/work-3.jpg" alt="alternative">
-                            </a>
-                        </div> <!-end of image-container -->
-                            <!-- <p><strong>For:</strong> Primoday, <strong>Project:</strong> complete redesign of their corporate website and platform <a class="blue" href="project.html">details</a></p> -->
-                        
-                            <!-- </div> end of text-container -->
-                            <!-- </div> end of col -->
-            </div> <!-- end of row -->
-            <!-- <div class="row">
-                <div class="col-lg-4">
-                    <div class="text-container">
-                        <div class="image-container">
-                            <a href="project.html">
-                                <img class="img-fluid" src="images/work-4.jpg" alt="alternative">
-                            </a>
-                        </div> <!- end of image-container -->
-                            <!-- <p><strong>For:</strong> Nextlite, <strong>Project:</strong> created a custom video editing and upload web app <a class="blue" href="project.html">details</a></p> -->
-                        
-                            <!-- </div> end of text-container -->
-                            <!-- </div> end of col -->
-                            <!-- <div class="col-lg-4">
-                    <div class="text-container">
-                        <div class="image-container">
-                            <a href="project.html">
-                                <img class="img-fluid" src="images/work-5.jpg" alt="alternative">
+                                <img class="img-fluid" src="images/countam.png" alt="CountAm">
                             </a>
                         </div>
-                        <! end of image-container -->
-                            <!-- <p><strong>For:</strong> Syncnow, <strong>Project:</strong> web design for their corporate websites and landing pages <a class="blue" href="project.html">details</a></p> -->
-                        
-                            <!-- </div> end of text-container -->
-                            <!-- </div> end of col -->
-                            <!-- <div class="col-lg-4">
-                    <div class="text-container">
+                        <div class="project-details">
+                            <h5>CountAm</h5>
+                            <p><strong>For:</strong> Class Practice</p>
+                            <p>A practical application developed as part of a technical exercise, focusing on logic implementation.</p>
+                            <a class="btn-solid-lg" href="project.html">View Details</a>
+                        </div>
+                        </div>
+                        </div>
+
+                <!-- Project Card -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card">
                         <div class="image-container">
-                            <a href="project.html">
-                                <img class="img-fluid" src="images/work-6.jpg" alt="alternative">
+                            <a href="https://irenimoyan.github.io/Calculator/">
+                                <img class="img-fluid" src="images/calculator.png" alt="Calculator">
                             </a>
-                        </div> <!- end of image-container -->
-                            <!-- <p><strong>For:</strong> Shifter, <strong>Project:</strong> started a new website from ground up for a new product <a class="blue" href="project.html">details</a></p> -->
-                        
-                            <!-- </div> end of text-container -->
-                            <!-- </div> end of col -->
-                            <!-- </div> end of row -->
-                            <!-- </div> end of container -->
-                            <!-- </div> end of basic-4 -->
+                        </div>
+                        <div class="project-details">
+                            <h5>JS Calculator</h5>
+                            <p><strong>Challenge:</strong> Social Media Coding Challenge</p>
+                            <p>A fully functional calculator built with vanilla JavaScript, featuring a clean and responsive interface.</p>
+                            <a class="btn-solid-lg" href="https://irenimoyan.github.io/Calculator/">View Project</a>
+                        </div>
+                        </div>
+                        </div>
+                        </div> <!-- end of row -->
+                        </div> <!-- end of container -->
+                        </div> <!-- end of basic-4 -->
+                        <!-- end of works -->
     <!-- end of works -->
 
     <!-- Section Divider -->
@@ -372,11 +384,11 @@
 
 
     <!-- Footer -->
-    <div class="footer bg-gray">
+    <div class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="social-container">
+                    <div class="social-container" data-aos="fade-up">
                         <span class="fa-stack">
                             <a href="https://www.facebook.com/sheu.tomalli/">
                                 <i class="fas fa-circle fa-stack-2x"></i>
@@ -416,23 +428,14 @@
 
 
     <!-- Copyright -->
-    <div class="copyright bg-gray">
+    <div class="copyright">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="p-small">Copyright © <a class="no-line" href="#your-link">Tom-Alli Sheu</a></p>
+                    <p class="p-small">Copyright © Tom-Alli Sheu</p>
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
         </div> <!-- end of container -->
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="p-small">Distributed By <a class="no-line" href="https://themewagon.com/">Themewagon</a></p>
-                </div> <!-- end of col -->
-            </div> <!-- enf of row -->
-        </div> <!-- end of container -->
-        
     </div> <!-- end of copyright --> 
     <!-- end of copyright -->
     
@@ -441,6 +444,7 @@
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
     <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
     <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
 </body>
 </html>
